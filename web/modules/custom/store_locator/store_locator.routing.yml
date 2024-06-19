@@ -1,0 +1,18 @@
+store_locator.map:
+  path: '/store-locator'
+  defaults:
+    _controller: '\Drupal\store_locator\Controller\StoreLocatorController::map'
+    _title: 'Store Locator'
+  requirements:
+    _access: 'TRUE'
+store_locator.stores:
+  path: '/store-locator/stores/{lat}/{lng}'
+  defaults:
+    _controller: '\Drupal\store_locator\Controller\StoreLocatorController::getStores'
+    _format: json
+  requirements:
+    _access: 'TRUE'
+    lat: '-?\d+(\.\d+)?'
+    lng: '-?\d+(\.\d+)?'  
+
+

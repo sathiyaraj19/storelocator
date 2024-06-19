@@ -1,0 +1,12 @@
+store_locator_map:
+  version: 1.x
+  css:
+    theme:
+      css/leaflet_map.css: {}
+  js:
+    js/store_locator_map.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - leaflet/leaflet

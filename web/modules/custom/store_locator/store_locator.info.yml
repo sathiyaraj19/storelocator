@@ -1,0 +1,8 @@
+name: 'My Store Locator'
+type: module
+description: 'A custom module for store locator using Leaflet and Geofield.'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - geofield:geofield
+  - leaflet:leaflet

@@ -1,0 +1,189 @@
+/* Styling for the map container */
+div#map {
+  height: 500px; /* Adjust height as needed */
+  width: 100%; /* Ensure the map fills its container */
+  position: relative; /* Ensure proper positioning */
+  z-index: 1; /* Adjust z-index if necessary */
+}
+
+/* Ensures Leaflet map container fills its parent */
+.leaflet-container {
+  height: 100%; /* Ensure the Leaflet container fills its parent */
+  width: 100%; /* Ensure the Leaflet container fills its parent */
+  z-index: 1; /* Adjust z-index if necessary */
+}
+
+/* Cursor style on map drag */
+.leaflet-grab {
+  cursor: grab; /* Change cursor style on map drag */
+}
+
+/* Styling for Leaflet controls */
+.leaflet-control {
+  margin-top: 10px; /* Adjust margin top for Leaflet controls */
+}
+
+/* Marker icon dimensions */
+.leaflet-marker-icon {
+  width: 25px; /* Adjust marker icon width */
+  height: 41px; /* Adjust marker icon height */
+}
+
+/* Styling for Leaflet popups */
+.leaflet-popup {
+  width: auto; /* Adjust popup width as needed */
+  max-width: 300px; /* Limit maximum width of popups */
+  padding: 10px; /* Add padding inside popups */
+  font-size: 14px; /* Adjust font size inside popups */
+}
+
+/* Styling for Leaflet popup content wrapper */
+.leaflet-popup-content-wrapper {
+  border-radius: 5px; /* Add border radius to popup content */
+  background-color: #fff; /* Set background color of popups */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Add box shadow to popups */
+}
+
+/* Styling for Leaflet popup tip */
+.leaflet-popup-tip {
+  width: 20px; /* Adjust width of popup tip */
+  height: 10px; /* Adjust height of popup tip */
+  background-color: #fff; /* Set background color of popup tip */
+}
+
+/* Form container styling */
+#store-address-form {
+  max-width: 100%; /* Set a maximum width for the form */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add padding around the form */
+  border: 1px solid #ccc; /* Add a border around the form */
+  border-radius: 5px; /* Round the corners of the border */
+  background-color: #f9f9f9; /* Set a background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Flexbox layout for form paragraph */
+#store-address-form p {
+  display: flex; /* Use flexbox layout */
+  gap: 10px; /* Add space between the input and button */
+  align-items: center; /* Center items vertically */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Input field styling */
+#store-address {
+  flex: 1; /* Allow the input field to grow and take up remaining space */
+  padding: 10px; /* Add padding inside the input field */
+  border: 1px solid #ccc; /* Add a border to the input field */
+  border-radius: 3px; /* Round the corners of the input field */
+  font-size: 16px; /* Increase the font size */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width */
+}
+
+/* Submit button styling */
+#store-address-submit {
+  padding: 10px 20px; /* Add padding inside the button */
+  border: none; /* Remove the default border */
+  border-radius: 3px; /* Round the corners of the button */
+  background-color: #007bff; /* Set a background color */
+  color: white; /* Set the text color to white */
+  font-size: 16px; /* Increase the font size */
+  cursor: pointer; /* Change the cursor to a pointer when hovering */
+  transition: background-color 0.3s ease; /* Add a transition effect for the background color */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Hover effect for submit button */
+#store-address-submit:hover {
+  background-color: #0056b3; /* Darken the background color on hover */
+}
+
+/* Location details styling */
+#location-details {
+  font-family: Arial, sans-serif; /* Set font family */
+  font-size: 16px; /* Set font size */
+  color: #333; /* Set text color */
+}
+
+/* Styling for location details paragraphs */
+#location-details p {
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Set font weight to bold */
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Styling for location details list */
+#location-details ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap to next line */
+}
+
+/* Styling for location details list items */
+#location-details li {
+  margin: 10px; /* Add margin around each item */
+  padding: 10px; /* Add padding inside each item */
+  border: 1px solid #ddd; /* Add a border */
+  border-radius: 4px; /* Round the corners */
+  background-color: #f9f9f9; /* Set background color */
+  width: calc(50% - 20px); /* Set width of each item */
+  box-sizing: border-box; /* Ensure padding and border are included in the total width */
+}
+
+/* Styling for links inside location details */
+#location-details a {
+  font-weight: bold; /* Set font weight to bold */
+  color: #007bff; /* Set link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect for links inside location details */
+#location-details a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust list item width for smaller screens */
+  #location-details li {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Container styling */
+#content {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Ensure items wrap to next line if container width is exceeded */
+}
+
+/* Flex item styling */
+#content > * {
+  flex: 1 1 auto; /* Grow, shrink, basis */
+  margin: 10px; /* Adjust margin as per your design */
+}
+
+/* Image styling */
+#content img {
+  max-width: 100%; /* Ensure images don't exceed their container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* List styling */
+#content ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+/* List item styling */
+#content ul li {
+  display: inline-block; /* Make list items display inline */
+  margin-right: 10px; /* Adjust spacing between list items */
+}
+
+/* Link styling */
+#content a {
+  text-decoration: none; /* Remove underline from links */
+  color: #007bff; /* Change link color as desired */
+}
